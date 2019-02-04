@@ -23,8 +23,20 @@ class RangeSlider extends Component {
         ...style,
       }}
       >
-        <span ref={track} style={{position: 'absolute'}}></span>
-        <span ref={val}>{value}</span>
+        <span ref={val}
+          style={{display: 'inline-flex',
+          alignItems: 'center'}}
+          >{value}</span>
+        <span
+          ref={track}
+          style={
+            {position: 'absolute',
+             height: `${height}px`,
+             width: '30px',
+             backgroundColor: 'blue'}
+          }
+        >
+        </span>
     </div>;
   }
 }
