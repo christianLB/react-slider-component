@@ -23,10 +23,6 @@ class RangeSlider extends Component {
         ...style,
       }}
       >
-        <span ref={val}
-          style={{display: 'inline-flex',
-          alignItems: 'center'}}
-          >{value}</span>
         <span
           ref={track}
           style={
@@ -37,6 +33,10 @@ class RangeSlider extends Component {
           }
         >
         </span>
+        <span ref={val}
+          style={{display: 'inline-flex',
+          alignItems: 'center'}}
+        >{value}</span>
     </div>;
   }
 }
