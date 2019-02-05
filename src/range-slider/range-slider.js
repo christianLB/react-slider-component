@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Track from './track';
 
 class RangeSlider extends Component {
   constructor(props){
